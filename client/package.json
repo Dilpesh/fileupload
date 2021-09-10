@@ -8,10 +8,10 @@
     "client",
     "browser"
   ],
-  "author": "Dilpesj Jain",
+  "author": "Dilpesh Jain",
   "contributors": [],
   "dependencies": {
-    "express": "^4.16.2",
+    "express": "^4.17.1",
     "jspdf": "^2.1.1"
   },
   "devDependencies": {

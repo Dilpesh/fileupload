@@ -8,12 +8,12 @@ app.use(express.static(__dirname));
 
 
 
-var fs = require('fs');
+// var fs = require('fs');
 
-if (fs.existsSync('index.html'))
-{
-    fs.unlinkSync('index.html');
-}
+// if (fs.existsSync('index.html'))
+// {
+//     fs.unlinkSync('index.html');
+// }
 
 
 // if (process.argv[2] == 'local')
