@@ -1,0 +1,27 @@
+{
+  "name": "Financepeer Project",
+  "version": "1.0.0",
+  "keywords": [
+    "util",
+    "functional",
+    "server",
+    "client",
+    "browser"
+  ],
+  "author": "Dilpesj Jain",
+  "contributors": [],
+  "dependencies": {
+    "express": "^4.16.2",
+    "jspdf": "^2.1.1"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-cssmin": "^2.2.0",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-ng-annotate": "^2.0.2"
+  },
+  "scripts": {
+    "start": "node index"
+  }
+}

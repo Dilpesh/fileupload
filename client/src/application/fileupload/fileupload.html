@@ -1,0 +1,51 @@
+<!--main content start-->
+<section id="{{showSideMenu?'main-content-sidebar-open':'main-content-sidebar-closed'}}">
+    <section class="wrapper">
+    	<div class="col-md-12-Zeropad" ng-show="!showHomeworks">
+            <div class="content-panel" style="padding: 20px">
+            	<div>
+            		<form>
+            			<div class="row form-group">
+            				<div class="col-md-3">
+            					<label for="title">Upload File:</label>
+                            	<input type = "file" file-model = "myFile"/>
+            				</div>
+            				<div class="col-md-3">
+            					<button ng-disabled="!myFile" class="btn btn-success btn-sm" ng-click = "uploadFile();myFile=''">Upload</button>
+            					<button class="btn btn-danger btn-sm" ng-click="angular.copy(myFile)" type="reset">Clear </button>
+            				</div>
+            			</div>
+                        <!-- <div class="form-group">
+                            <label for="title">Upload File:</label>
+                            <input type = "file" file-model = "myFile"/>
+                        </div> -->
+	                </form>
+	         		<!-- <button  class="btn btn-success btn-sm" ng-click = "uploadFile()">Upload</button> -->
+	         	</div>
+	         	<div >
+                    <table class="table table-striped table-advance table-hover">
+
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>UserId</th>
+                                <th>Title</th>
+                                <th>Body</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="data in data_list | orderBy:'name' | filter : searchStudent ">
+                                <td>{{data.id}} </td>
+                                <td>{{data.userId}} </td>
+                                <td>{{data.title}} </td>
+                                <td>{{data.body}} </td>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            	
+            </div>
+        </div>
+    </section>
+</section>

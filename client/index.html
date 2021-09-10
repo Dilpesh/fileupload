@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="Dashboard">
+        <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+        <title>File upload</title>
+        <link rel="icon" href="assets/img/zuwagon_browser.png">
+        <link href="./assets/css/bootstrap.css" rel="stylesheet">
+        <link href="./assets/css/style.css" rel="stylesheet">
+        <link href="./assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+        <link href="./src/common/css/zuwagon.css" rel="stylesheet" type="text/css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    </head>
+
+    <body ng-app="TrackWebApp">
+        <section id="container">
+            <div ng-include='"/src/application/templates/header.html"' ng-show="toolbar.visible"></div>
+            <route-loading-indicator></route-loading-indicator>
+            <div ng-if="!isRouteLoading" ng-view></div>
+        </section>
+
+        <script src="./assets/js/AngularJs/1.4.8/angular.min.js"></script>
+        <script src="./assets/js/AngularJs/1.4.8/others/angular-route.min.js"></script>
+        <script src="./assets/js/AngularJs/1.4.8/others/angular-jwt.js"></script>
+        <script src="./src/adminapp.js"></script>
+        <script src="./src/common/js/flash.service.js"></script>
+        <script src="./src/common/js/http.services.js"></script>
+        <script src="./src/application/login/loginController.js"></script>
+        <script src="./src/application/fileupload/fileUploadController.js"></script>
+        <script src="./src/application/templates/headerController.js"></script>
+        <script src="./assets/js/jwt-decode.min.js"></script> 
+    </body>
+
+</html>

@@ -1,0 +1,15 @@
+<div ng-controller="headercontroller">
+    <!--header start-->
+    <header class="header black-bg">
+        <div ng-show="global.error" class="global-error alert alert-danger">{{global.error}}</div>
+
+        <div class="top-menu">
+            <ul class="nav pull-right top-menu">
+                <li><a title="Logout" class="logout" ng-click="logout()"><i class="fa fa-sign-out"></i></a></li>
+            </ul>
+        </div>
+        <div id="sound"></div>
+    </header>
+    <!--header end-->
+    
+</div>
